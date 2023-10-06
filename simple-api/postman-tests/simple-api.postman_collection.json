@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "3635cd37-20d7-43e0-818a-723c3afe433d",
+		"name": "simple-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Send sentence",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "AbN and ING are two popular banks in the Netherlands.\nAbN, rabo and ING are two popular banks in the Netherlands.\nThe analysts of ABN did a great job!\nThe analysts of volksbank did a great job!"
+				},
+				"url": {
+					"raw": "https://us-central1-simple-api-1d2c6.cloudfunctions.net/app",
+					"protocol": "https",
+					"host": [
+						"us-central1-simple-api-1d2c6",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"app"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Mix case",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "AbN, rabo and ING are two popular banks in the Netherlands."
+						},
+						"url": {
+							"raw": "https://us-central1-simple-api-1d2c6.cloudfunctions.net/app",
+							"protocol": "https",
+							"host": [
+								"us-central1-simple-api-1d2c6",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"app"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Upper case",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "The analysts of ABN did a great job!"
+						},
+						"url": {
+							"raw": "https://us-central1-simple-api-1d2c6.cloudfunctions.net/app",
+							"protocol": "https",
+							"host": [
+								"us-central1-simple-api-1d2c6",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"app"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Lower case",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "The analysts of volksbank did a great job!"
+						},
+						"url": {
+							"raw": "https://us-central1-simple-api-1d2c6.cloudfunctions.net/app",
+							"protocol": "https",
+							"host": [
+								"us-central1-simple-api-1d2c6",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"app"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		}
+	]
+}
